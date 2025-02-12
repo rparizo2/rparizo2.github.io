@@ -36,7 +36,8 @@ main {
     padding: 2rem;
 }
 
-h1, h2, h3 {
+h1 { color: rgb(255,0,0); }
+h2, h3 {
     color: #333;
 }
 
