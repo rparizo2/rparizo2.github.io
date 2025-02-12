@@ -23,9 +23,11 @@ nav ul li {
     margin-right: 1rem;
 }
 
-nav ul li a {
+nav ul li a
+{
     color: #fff;
     text-decoration: none;
+    background-color: rgb(255,145,0);
 }
 
 nav ul li a:hover {
