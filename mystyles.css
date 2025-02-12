@@ -12,6 +12,11 @@ header {
     padding: 1rem;
     text-align: center;
 }
+/* Page Breakout */
+#middle { display: flex; }
+#left { width: 25%; background-color: rgb(0,0,255) }
+#center { width: 60%; background-color: rgb(0,0,145); height:200px; }
+#right { width: 25%; background-color: rgb(0,0,255) }
 
 nav ul {
     list-style-type: none;
