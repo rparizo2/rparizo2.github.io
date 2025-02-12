@@ -27,11 +27,11 @@ nav ul li a
 {
     color: #fff;
     text-decoration: none;
-    background-color: rgb(255,145,0);
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover
+{
+    background-color: rgb(255,145,0);
 }
 
 main {
