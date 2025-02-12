@@ -6,14 +6,14 @@ body {
     /* background-color: rgb(188,188,188); */
 }
 /* Top of Page */
-header { background-color: rgb(90,90,90); color: rgb(180,0,0); padding: 25%; text-align: center; }
+header { background-color: rgb(90,90,90); color: rgb(255,255,255); height: 25%; text-align: center; }
 /* Middle of Page */
 #middle { display: flex; }
 #left { width: 25%; background-color: rgb(128,128,128) }
-#center { width: 50%; background-color: rgb(188,188,188); height:200px; }
+#center { width: 50%; background-color: rgb(188,188,188); }
 #right { width: 25%; background-color: rgb(128,128,128) }
 /* Bottom of Page */
-footer { background-color: rgb(90,90,90); padding: 25%; }
+footer { background-color: rgb(90,90,90); height: 25%; }
 
 
 nav ul {
