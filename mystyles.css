@@ -3,20 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(0,0,145);
+    /* background-color: rgb(188,188,188); */
 }
 
 header {
-    background-color: rgb(0,0,255);
+    background-color: rgb(128,128,128);
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
 /* Page Breakout */
 #middle { display: flex; }
-#left { width: 25%; background-color: rgb(0,0,255) }
-#center { width: 60%; background-color: rgb(0,0,145); height:200px; }
-#right { width: 25%; background-color: rgb(0,0,255) }
+#left { width: 25%; background-color: rgb(128,128,128) }
+#center { width: 50%; background-color: rgb(188,188,188); height:200px; }
+#right { width: 25%; background-color: rgb(128,128,128) }
 
 nav ul {
     list-style-type: none;
