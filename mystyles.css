@@ -82,8 +82,8 @@ tr, td
 td a:hover
 { color: rgb(255,255,0); text-shadow: 1px 1px rgb(255,255,255); }
 
-td a .active
-{ color: rgb(255,0,0); text-shadow: 1px 1px rgb(255,255,0); }
+main section table tr td a.active
+{ color: rgb(255,255,0); text-shadow: 1px 1px rgb(255,255,255);}
 
 article
 { display: block; float: left; padding: 20px; width: 65%; background-color: rgb(255,255,255); height: 700px; }
