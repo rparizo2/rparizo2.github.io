@@ -48,9 +48,9 @@ header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; background-
 /* GUIDES LINKS STYLE */
 #g-links { text-decoration: none; color: rgb(0,176,240); }
 #g-links:visited { text-decoration: none; color: rgb(0,176,240); }
-#g-links:hover { text-decoration: none; color: rgb(250,250,0); }
+#g-links:hover { text-decoration: none; color: rgb(230,195,53); }
 #g-links:focus { text-decoration: none; color: rgb(0,176,240); }
-#g-links:hover, #g-links:active { text-decoration: none; color: rgb(0,176,240); }
+#g-links:active { text-decoration: none; color: rgb(0,0,0); }
 
 /* LEFT NAVIGATION MENU */
 table { padding: 20px; margin: 0; }
