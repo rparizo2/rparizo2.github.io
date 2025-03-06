@@ -46,11 +46,11 @@ header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; background-
 .types { float: left; width: 15%; height: 700px; background: rgb(0,0,0); padding: 0px; }
 
 /* GUIDES LINKS STYLE */
-#g-links a { text-decoration: none; color: rgb(0,176,240); }
-#g-links a:visited { text-decoration: none; color: rgb(0,176,240); }
-#g-links a:hover { text-decoration: none; color: rgb(250,250,0); }
-#g-links a:focus { text-decoration: none; color: rgb(0,176,240); }
-#g-links a:hover, a:active { text-decoration: none; color: rgb(0,176,240); }
+#g-links { text-decoration: none; color: rgb(0,176,240); }
+#g-links:visited { text-decoration: none; color: rgb(0,176,240); }
+#g-links:hover { text-decoration: none; color: rgb(250,250,0); }
+#g-links:focus { text-decoration: none; color: rgb(0,176,240); }
+#g-links:hover, #g-links:active { text-decoration: none; color: rgb(0,176,240); }
 
 /* LEFT NAVIGATION MENU */
 table { padding: 20px; margin: 0; }
