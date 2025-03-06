@@ -46,7 +46,7 @@ header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; background-
 .types { float: left; width: 15%; height: 700px; background: rgb(0,0,0); padding: 0px; }
 
 /* GUIDES LINKS STYLE */
-#g-links a { color: rgb(0,176,240); }
+#g-links a { text-decoration: none; color: rgb(0,176,240); }
 #g-links a:visited { text-decoration: none; color: rgb(0,176,240); }
 #g-links a:hover { text-decoration: none; color: rgb(250,250,0); }
 #g-links a:focus { text-decoration: none; color: rgb(0,176,240); }
