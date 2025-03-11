@@ -90,8 +90,100 @@
 				</table>
 			</div>
 			<article>
-				<h1>Test your knowledge about SEO!</h1>
-				<p>UNDER CONSTRUCTION</p>
+				<style>
+					.hidden { display: none; }
+				</style>
+				<h1>SEO Self-Assessment Quiz</h1>
+				<p>There are 10 questions about SEO. All the answers are found within this website. Must get a 70% to pass. Good luck! </p>
+				<button id="beginButton" type="button" onclick="startQuiz()">Begin</button>
+				<form id="quizForm" class="hidden">
+
+					<div id="question1">
+						<p>1. What is the ultimate goal of SEO?</p>
+						<input type="radio" name="q1" value="a"> Find misspelled words on web pages<br>
+						<input type="radio" name="q1" value="b"> Create suggestions based off user input<br>
+						<input type="radio" name="q1" value="c"> Attract visitors to a specific website<br><!-- Correct -->
+						<input type="radio" name="q1" value="d"> Make a list of web pages to visit<br><br>
+						<button id="quizBtn" type="button" onclick="nextQuestion(1)">Next</button>
+					</div>
+					
+					<div id="question2" class="hidden">
+						<p>2. What are the benefits of having a responsive design for your website? (Select all that apply)</p>
+						<input type="checkbox" name="q2" value="a"> Improved Site Speed<br>
+						<input type="checkbox" name="q2" value="b"> Increased Backlinks<br>
+						<input type="checkbox" name="q2" value="c"> Better User Experience on All Devices<br><!-- Correct -->
+						<input type="checkbox" name="q2" value="d"> Enhanced Social Media Engagement<br><br>
+						<button id="quizBtn" type="button" onclick="nextQuestion(2)">Next</button>
+					</div>
+					
+					<div id="question3" class="hidden">
+						<p>3. Fill in the blank: The process of improving the visibility of a website on search engines is called <input type="text" name="q3" class="answer-box">.</p><br><!-- SEO -->
+						<button id="quizBtn" type="button" onclick="nextQuestion(3)">Next</button>						
+					</div>
+					
+					<div id="question4" class="hidden">
+						<p>4. What is the main focus of Local SEO?</p>
+						<input type="radio" name="q4" value="a"> Optimizing for mobile devices<br>
+						<input type="radio" name="q4" value="b"> Attracting local customers<br><!-- Correct -->
+						<input type="radio" name="q4" value="c"> Creating high-quality content<br>
+						<input type="radio" name="q4" value="d"> Improving site speed<br><br>
+						<button id="quizBtn" type="button" onclick="nextQuestion(4)">Next</button>
+					</div>
+					
+					<div id="question5" class="hidden">
+						<p>5. What practices are involved in Image SEO? (Select all that apply)</p>
+						<input type="checkbox" name="q5" value="a"> Using Descriptive File Names<br><!-- Correct -->
+						<input type="checkbox" name="q5" value="b"> Providing Alt Text<br><!-- Correct -->
+						<input type="checkbox" name="q5" value="c"> Creating Internal Links<br>
+						<input type="checkbox" name="q5" value="d"> Compressing Images for Faster Load Times<br><br><!-- Correct -->
+						<button id="quizBtn" type="button" onclick="nextQuestion(5)">Next</button>
+					</div>
+					
+					<div id="question6" class="hidden">
+						<p>6. Fill in the blank: Content SEO involves creating and optimizing high-quality content to improve your website's <input type="text" name="q6" class="answer-box"> and ranking.</p><br><!-- visibility -->
+						<button  id="quizBtn" type="button" onclick="nextQuestion(6)">Next</button>						
+					</div>
+					
+					<div id="question7" class="hidden">
+						<p>7. Which of the following is a key element of eCommerce SEO?</p>
+						<input type="radio" name="q7" value="a"> Creating engaging video content<br>
+						<input type="radio" name="q7" value="b"> Writing unique product descriptions<br><!-- Correct -->
+						<input type="radio" name="q7" value="c"> Using hreflang tags<br>
+						<input type="radio" name="q7" value="d"> Implementing structured data for images<br><br>
+						<button id="quizBtn" type="button" onclick="nextQuestion(7)">Next</button>
+					</div>
+					
+					<div id="question8" class="hidden">
+						<p>8. Which actions can enhance Mobile SEO? (Select all that apply)</p>
+						<input type="checkbox" name="q8" value="a"> Ensuring Responsive Design<br><!-- Correct -->
+						<input type="checkbox" name="q8" value="b"> Optimizing Page Speed<br><!-- Correct -->
+						<input type="checkbox" name="q8" value="c"> Using Structured Data<br>
+						<input type="checkbox" name="q8" value="d"> Creating Local Citations<br><br>
+						<button id="quizBtn" type="button" onclick="nextQuestion(8)">Next</button>
+					</div>
+					
+					<div id="question9" class="hidden">
+						<p>9. Fill in the blank: Backlinks are a key element of  <input type="text" name="q9" class="answer-box"> SEO, as they signal to search engines that your content is valuable and trustworthy.</p><br><!-- Off-Page -->
+						<button  id="quizBtn" type="button" onclick="nextQuestion(9)">Next</button>						
+					</div>
+					
+					<div id="question10" class="hidden">
+						<p>10. What is the purpose of using alt text for images?</p>
+						<input type="radio" name="q10" value="a"> To improve site speed<br>
+						<input type="radio" name="q10" value="b"> To create internal links<br>
+						<input type="radio" name="q10" value="c"> To enhance social media engagement<br>
+						<input type="radio" name="q10" value="d"> To provide descriptive information for search engines and users with visual impairments<br><br><!-- Correct -->
+						<button id="quizBtn" type="button" onclick="nextQuestion(10)">Submit</button>
+					</div>					
+				<div id="results" class="hidden">
+					<h2>Quiz Results</h2>
+					<p id="score"></p>
+					<p id="answers"></p>
+					<p id="passFail"></p><br>
+					<button id="quizBtn" type="button" onclick="restartQuiz()">Restart</button>
+				</div>
+				</form>
+				<script src="quiz.js"></script>
 			</article>
 			<aside></aside>
 		</section>
