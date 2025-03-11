@@ -45,12 +45,20 @@ header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; background-
 /* MAIN CONTENT STYLING */
 .types { float: left; width: 15%; height: 700px; background: rgb(0,0,0); padding: 0px; }
 
-/* GUIDES LINKS STYLE */
+/* GUIDES STYLES */
 #g-links { text-decoration: none; color: rgb(0,176,240); }
 #g-links:visited { text-decoration: none; color: rgb(0,176,240); }
 #g-links:hover { text-decoration: none; color: rgb(230,195,53); }
 #g-links:focus { text-decoration: none; color: rgb(0,176,240); }
 #g-links:active { text-decoration: none; color: rgb(0,0,0); }
+
+
+/* QUIZ ME! STYLES */
+#beginButton { cursor: pointer; }
+#beginButton:hover { background-color: rgb(0,0,0); color: rgb(255,255,225); }
+#quizBtn { cursor: pointer; }
+#quizBtn:hover { background-color: rgb(0,0,0); color: rgb(255,255,225); }
+.answer-box { width: 200px; height: 30px; /*border: 1px solid rgb(0,0,0);*/ background-color: rgb(255,255,0); padding: 5px; font-size: 16px; }
 
 /* LEFT NAVIGATION MENU */
 table { padding: 20px; margin: 0; }
