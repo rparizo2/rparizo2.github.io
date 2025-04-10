@@ -7,9 +7,8 @@
   header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
   li { line-height: 1.5rem; } /* MIGHT NEED CHANGING */
   header nav > ul > li > a { padding: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; background-color: rgb(155,175,221); }
-  .topbar-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; }
-  .logo { color: rgb(230,195,53); font-size: 20px; text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+  .topbar-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; } /* MIGHT NEED CHANGING */
+  .logo { color: rgb(230,195,53); font-size: 16px; text-shadow: 1px 1px rgb(0,0,0); text-decoration: none; }
 }
 
 /* Responsive Design: Medium Screens - Tablet Devices */
