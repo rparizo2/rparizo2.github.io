@@ -84,6 +84,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
   }
   .grid-flow-column { 
     grid-auto-flow: row;
+    font-size: .875em;
   }
 }
 @media only screen and (max-width: 412px) {}
