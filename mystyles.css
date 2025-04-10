@@ -1,6 +1,6 @@
 /* mystyles.css */
 /* Responsive Design: Small Screens - Mobile Devices */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   /* TOP OF THE WEBSITE PAGE */
   header { position: relative; top: 1rem; left: 1rem; right: 1rem; width: 98%; z-index: 3; padding-top: 0.5rem; padding-bottom: 05rem; height: 80px; }
   .spacer { height: 30px; width: 100px; }
