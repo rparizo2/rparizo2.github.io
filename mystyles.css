@@ -1,6 +1,6 @@
 /* mystyles.css */
 /* Responsive Design: Small Screens - Mobile Devices */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   header { top: 1rem; left: 1rem; right: 1rem; width: 98%; padding-top: 0.5rem; padding-bottom: 0.5rem; height: 80px; }
   .spacer { height: 30px; width: 100px; }
   header nav { padding-top: 5px; }
@@ -9,7 +9,7 @@
 }
 
 /* Responsive Design: Medium Screens - Tablet Devices */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   header { top: 1.5rem; left: 1.5rem; right: 1.5rem; width: 97%; padding-top: 0.75rem; padding-bottom: 0.75rem; height: 90px; }
   .spacer { height: 40px; width: 120px; }
   header nav { padding-top: 7px; }
@@ -18,7 +18,7 @@
 }
 
 /* Responsive Design: Large Screens - Desktop Computers */
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   
 /* BODY OF THE WEBSITE PAGE */
 body { margin: 0; background: rgb(155,175,221); height: 100vh; padding: 0; z-index: 1; font-family: Georgia, serif; }
