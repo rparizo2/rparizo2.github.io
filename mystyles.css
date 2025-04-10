@@ -1,28 +1,4 @@
 /* mystyles.css */
-/* Responsive Design: Small Screens - Mobile Devices */
-@media (max-width: 600px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 1rem; left: 1rem; right: 1rem; width: 98%; z-index: 3; padding-top: 0.5rem; padding-bottom: 05rem; height: 80px; }
-  .spacer { height: 30px; width: 100px; }
-  header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
-  li { line-height: 1.5rem; } /* MIGHT NEED CHANGING */
-  header nav > ul > li > a { padding: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  .topbar-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; } /* MIGHT NEED CHANGING */
-  .logo { color: rgb(230,195,53); font-size: 16px; text-shadow: 1px 1px rgb(0,0,0); text-decoration: none; }
-}
-
-/* Responsive Design: Medium Screens - Tablet Devices */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  header { top: 1.5rem; left: 1.5rem; right: 1.5rem; width: 97%; padding-top: 0.75rem; padding-bottom: 0.75rem; height: 90px; }
-  .spacer { height: 40px; width: 120px; }
-  header nav { padding-top: 7px; }
-  header nav > ul > li > a { padding: 0.65rem; font-size: 0.85rem; }
-  .logo { font-size: 25px; }
-}
-
-/* Responsive Design: Large Screens - Desktop Computers */
-@media only screen and (min-width: 1025px) {
-}
 
 /* BODY OF THE WEBSITE PAGE */
 body { margin: 0; background: rgb(155,175,221); height: 100vh; padding: 0; z-index: 1; font-family: Georgia, serif; }
@@ -101,3 +77,28 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 .next-box1:hover ~ .next-box2 .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
 .next-box2:hover .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
 .next-text:hover { cursor: pointer; color: black; text-shadow: 1px 1px rgb(255,255,255); }
+
+/* Responsive Design: Small Screens - Mobile Devices */
+@media (max-width: 600px) {
+  /* TOP OF THE WEBSITE PAGE */
+  header { position: relative; top: 1rem; left: 1rem; right: 1rem; width: 98%; z-index: 3; padding-top: 0.5rem; padding-bottom: 05rem; height: 80px; }
+  .spacer { height: 30px; width: 100px; }
+  header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
+  li { line-height: 1.5rem; } /* MIGHT NEED CHANGING */
+  header nav > ul > li > a { padding: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+  .topbar-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; } /* MIGHT NEED CHANGING */
+  .logo { color: rgb(230,195,53); font-size: 16px; text-shadow: 1px 1px rgb(0,0,0); text-decoration: none; }
+}
+
+/* Responsive Design: Medium Screens - Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header { top: 1.5rem; left: 1.5rem; right: 1.5rem; width: 97%; padding-top: 0.75rem; padding-bottom: 0.75rem; height: 90px; }
+  .spacer { height: 40px; width: 120px; }
+  header nav { padding-top: 7px; }
+  header nav > ul > li > a { padding: 0.65rem; font-size: 0.85rem; }
+  .logo { font-size: 25px; }
+}
+
+/* Responsive Design: Large Screens - Desktop Computers */
+@media only screen and (min-width: 1025px) {
+}
