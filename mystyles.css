@@ -5,10 +5,7 @@
   header { position: relative; top: 1rem; left: 1rem; right: 1rem; width: 98%; z-index: 3; padding-top: 0.5rem; padding-bottom: 05rem; height: 80px; }
   .spacer { height: 30px; width: 100px; }
   header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
+  li { line-height: 1.5rem; } /* MIGHT NEED CHANGING */
   header nav > ul > li > a { padding: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
   header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; background-color: rgb(155,175,221); }
   .topbar-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; }
@@ -26,7 +23,8 @@
 
 /* Responsive Design: Large Screens - Desktop Computers */
 @media only screen and (min-width: 1025px) {
-  
+}
+
 /* BODY OF THE WEBSITE PAGE */
 body { margin: 0; background: rgb(155,175,221); height: 100vh; padding: 0; z-index: 1; font-family: Georgia, serif; }
 * { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
@@ -104,4 +102,3 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 .next-box1:hover ~ .next-box2 .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
 .next-box2:hover .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
 .next-text:hover { cursor: pointer; color: black; text-shadow: 1px 1px rgb(255,255,255); }
-}
