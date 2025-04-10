@@ -85,7 +85,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
   .spacer { height: 30px; width: 100px; }
   header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
   li { line-height: 1.5rem; } /* MIGHT NEED CHANGING */
-  header nav > ul > li > a { padding: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+  header nav > ul > li > a { padding: 0.5rem; font-size: 0.50rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
   .topbar-container { margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; align-items: center; } /* MIGHT NEED CHANGING */
   .logo { color: rgb(230,195,53); font-size: 16px; text-shadow: 1px 1px rgb(0,0,0); text-decoration: none; }
   .grid-layout { display: grid; }
