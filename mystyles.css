@@ -80,7 +80,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 /* Responsive layout */
 @media only screen and (max-width: 414px), (min-width: 375px) { 
   .logo { 
-    color: rgb(230,195,53); font-size: 15px; text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; 
+    color: rgb(230,195,53); font-size: .925em; text-shadow: 1px 1px rgb(0,0,0); text-decoration: none; 
   }
   .grid-flow-column { 
     grid-auto-flow: row;
