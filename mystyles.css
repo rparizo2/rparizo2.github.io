@@ -93,12 +93,30 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 }
 
 /* Responsive Design: Medium Screens - Tablet Devices */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  header { top: 1.5rem; left: 1.5rem; right: 1.5rem; width: 97%; padding-top: 0.75rem; padding-bottom: 0.75rem; height: 90px; }
-  .spacer { height: 40px; width: 120px; }
-  header nav { padding-top: 7px; }
-  header nav > ul > li > a { padding: 0.65rem; font-size: 0.85rem; }
-  .logo { font-size: 4vw; }
+@media only screen and (max-width: 600px) {
+  /* TOP OF THE WEBSITE PAGE */
+	header { position: relative; top: 1vw; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.5rem; padding-bottom: 0.5rem; height: 60px; }
+	.spacer { height: 1px; }
+	header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
+	li { line-height: 0.70rem; } /* MIGHT NEED CHANGING */
+	header nav > ul > li > a { padding: 0; font-size: 3vw; text-shadow: 1px 1px rgb(0,0,0); }
+	.topbar-container { margin-left: auto; margin-right: auto; padding-left: .5rem; padding-right: .5rem; align-items: center; } /* MIGHT NEED CHANGING */
+	.logo { font-size: 4vw; text-shadow: 1px 1px rgb(0,0,0); }
+	header .grid-layout { display: grid; grid-template-rows: auto auto auto; }
+	header .grid-flow-column {  grid-template-rows: auto auto auto; grid-auto-flow: rows; }
+  
+  /* LEFT NAVIGATION MENU */
+	.types { float: left; width: 30%; height: 700px;; background: rgb(0,0,0); padding: 0px; font-size: 3vw;}
+	table { padding: 20px; margin: 0; }
+	tr, td { padding: 1px; margin: 1px; }
+	.buffer { height: 15px; width: 20px; }
+	.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
+	
+  /* RIGHT CONTENT BOX */	
+	article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
+	aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
+	.footer-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; }
+
 }
 
 /* Responsive Design: Large Screens - Desktop Computers */
