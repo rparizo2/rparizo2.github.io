@@ -93,7 +93,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 }
 
 /* Responsive Design: Medium Screens - Tablet Devices */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 375px) and (max-width: 414px) {
   /* TOP OF THE WEBSITE PAGE */
 	header { position: relative; top: 1vw; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.5rem; padding-bottom: 0.5rem; height: 75px; }
 	.spacer { height: 1px; }
@@ -116,6 +116,26 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 	article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
 	aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
 	.footer-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; }
+
+  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
+	.prev-box1 { display: hidden; }
+	.prev-box2 { display: hidden; }
+	.prev-img-box { display: block; background-color: rgb(0,0,0); width: 35px; height: 60px; cursor: pointer; padding-top: 10px; padding-left: 3px;}
+	.prev-arrow { width: 20px; height: 40px;}
+	.prev-overlay { background-color: rgb(155,175,221); position: absolute; overflow: hidden; width: 0; height: 100%; transition: .3s ease; }
+	.prev-text { color: white; font-size: 23px; position: absolute; top: 50%; left: 55px; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); white-space: nowrap; text-shadow: 1px 1px rgb(0,0,0); }
+	.prev-box1:hover ~ .prev-box2 .prev-overlay { width: 100%; }
+	.prev-box2:hover .prev-overlay { width: 100%; }
+	.prev-text:hover { cursor: pointer; color: black; text-shadow: 1px 1px rgb(255,255,255); }
+	.next-box1 { position: fixed; right: 20.2%; top: 79%; width: 30px; }
+	.next-box2 { position: fixed; width: 195px; height: 60px; top: 79%; right: 21.75%; }
+	.next-img-box { display: block; background-color: rgb(0,0,0); width: 35px; height: 60px; cursor: pointer; padding: 10px; }
+	.next-arrow { width: 20px; height: 40px; }
+	.next-overlay { box-shadow: inset 0 0 0 0 rgb(155,175,221); position: absolute; overflow: hidden; width: 0; height: 100%; transition: box-shadow .3s ease-in-out; }
+	.next-text { color: white; font-size: 23px; position: absolute; top: 50%; right: -35px; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); white-space: nowrap; text-shadow: 1px 1px rgb(0,0,0); }
+	.next-box1:hover ~ .next-box2 .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
+	.next-box2:hover .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
+	.next-text:hover { cursor: pointer; color: black; text-shadow: 1px 1px rgb(255,255,255); }
 
 }
 
