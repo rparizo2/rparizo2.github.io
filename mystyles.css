@@ -105,17 +105,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 
   /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
 	.prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: hidden; }
-		 
-	.next-box1 { position: fixed; right: 20.2%; top: 79%; width: 30px; }
-	.next-box2 { position: fixed; width: 195px; height: 60px; top: 79%; right: 21.75%; }
-	.next-img-box { display: block; background-color: rgb(0,0,0); width: 35px; height: 60px; cursor: pointer; padding: 10px; }
-	.next-arrow { width: 20px; height: 40px; }
-	.next-overlay { box-shadow: inset 0 0 0 0 rgb(155,175,221); position: absolute; overflow: hidden; width: 0; height: 100%; transition: box-shadow .3s ease-in-out; }
-	.next-text { color: white; font-size: 23px; position: absolute; top: 50%; right: -35px; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); white-space: nowrap; text-shadow: 1px 1px rgb(0,0,0); }
-	.next-box1:hover ~ .next-box2 .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
-	.next-box2:hover .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
-	.next-text:hover { cursor: pointer; color: black; text-shadow: 1px 1px rgb(255,255,255); }
-
+	.next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: hidden; }
 }
 /* Responsive Design: Medium Screens - Tablet Devices */
 /* Responsive Design: Large Screens - Desktop Computers */
