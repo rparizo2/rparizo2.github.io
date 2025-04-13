@@ -90,8 +90,8 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 	.logo { font-size: 4vw; text-shadow: 1px 1px rgb(0,0,0); }
 	header .grid-layout { display: grid; grid-template-rows: auto auto auto; }
 	header .grid-flow-column {  grid-template-rows: auto auto auto; grid-auto-flow: rows; }
-	header nav .grid-layout { display: grid; }
-	header nav .grid-flow-column {  grid-auto-flow: column; }
+	header nav ul .grid-layout { display: grid; }
+	header nav ul .grid-flow-column {  grid-auto-flow: column; }
   
   /* LEFT NAVIGATION MENU */
 	.types { float: left; width: 30%; height: 700px;; background: rgb(0,0,0); padding: 0px; font-size: 3vw;}
