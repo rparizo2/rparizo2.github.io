@@ -137,7 +137,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 	.prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
 	.next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
 }
-/* Responsive Design: Medium Screens - Tablet Devices */
+/* Responsive Design: Medium Screens - Tablet Devices - Portrait Logical Width: 820 pixels, Logical Height: 1180 pixels */
 /* Responsive Design: Large Screens - Desktop Computers */
 @media only screen and (min-width: 1025px) {
 }
