@@ -111,7 +111,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 /* Responsive Design: Small Screens - Mobile Devices - Landscape */
 @media only screen and (min-width: 667px) and (max-width: 932px) {
   /* TOP OF THE WEBSITE PAGE */
-	header { position: relative; top: 20px; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.95rem; padding-bottom: 0.5rem; height: 75px; }
+	header { position: relative; top: 5px; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.95rem; padding-bottom: 0.5rem; height: 75px; }
 	.spacer { height: 1px; }
 	header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
 	li { line-height: 0.70rem; } /* MIGHT NEED CHANGING */
