@@ -111,7 +111,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 /* Responsive Design: Small Screens - Mobile Devices - Landscape */
 @media only screen and (min-width: 667px) and (max-width: 932px) {
   /* TOP OF THE WEBSITE PAGE */
-	header { position: relative; top: 1vw; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.95rem; padding-bottom: 0.5rem; height: 75px; }
+	header { position: relative; top: 20px; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.95rem; padding-bottom: 0.5rem; height: 75px; }
 	.spacer { height: 1px; }
 	header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
 	li { line-height: 0.70rem; } /* MIGHT NEED CHANGING */
@@ -122,7 +122,7 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 	header > nav > ul .grid-flow-column { grid-template-columns: auto auto auto auto auto; }
 	  
   /* LEFT NAVIGATION MENU */
-	.types { float: left; width: 30%; height: 700px;; background: rgb(0,0,0); padding: 0px; font-size: 3vw;}
+	.types { float: left; width: 30%; height: 700px;; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
 	table { padding: 20px; margin: 0; }
 	tr, td { padding: 1px; margin: 1px; }
 	.buffer { height: 15px; width: 20px; }
