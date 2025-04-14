@@ -83,11 +83,11 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
   /* TOP OF THE WEBSITE PAGE */
 	header { position: relative; top: 1vw; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.95rem; padding-bottom: 0.5rem; height: 75px; }
 	.spacer { height: 1px; }
-	header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 10px;}
+	header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
 	li { line-height: 0.70rem; } /* MIGHT NEED CHANGING */
-	header nav > ul > li > a { padding: 0; font-size: 4vw; text-shadow: 1px 1px rgb(0,0,0); }
+	header nav > ul > li > a { padding: 5px; font-size: 4vw; text-shadow: 1px 1px rgb(0,0,0); }
 	.topbar-container { margin-left: auto; margin-right: auto; padding-left: .5rem; padding-right: .5rem; align-items: center; } /* MIGHT NEED CHANGING */
-	.logo { font-size: 4vw; text-shadow: 1px 1px rgb(0,0,0); }
+	.logo { font-size: 5vw; text-shadow: 1px 1px rgb(0,0,0); }
 	header .grid-flow-column {  grid-template-rows: auto auto auto; }
 	header > nav > ul .grid-flow-column { grid-template-columns: auto auto auto auto auto; }
 	  
@@ -113,9 +113,9 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
   /* TOP OF THE WEBSITE PAGE */
 	header { position: relative; top: 1vw; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.95rem; padding-bottom: 0.5rem; height: 75px; }
 	.spacer { height: 1px; }
-	header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 10px;}
+	header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
 	li { line-height: 0.70rem; } /* MIGHT NEED CHANGING */
-	header nav > ul > li > a { padding: 0; font-size: 3vw; text-shadow: 1px 1px rgb(0,0,0); }
+	header nav > ul > li > a { padding: 5px; font-size: 3vw; text-shadow: 1px 1px rgb(0,0,0); }
 	.topbar-container { margin-left: auto; margin-right: auto; padding-left: .5rem; padding-right: .5rem; align-items: center; } /* MIGHT NEED CHANGING */
 	.logo { font-size: 4vw; text-shadow: 1px 1px rgb(0,0,0); }
 	header .grid-flow-column {  grid-template-rows: auto auto auto; }
