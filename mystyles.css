@@ -5,23 +5,24 @@ body { margin: 0; background: rgb(155,175,221); height: 100vh; padding: 0; z-ind
 * { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
 :before, :after { box-sizing: inherit; }
 .bars { background: rgb(22,63,101); position: fixed; z-index: 2; }
-#topbar { left: 0; top: 0; right: 0; height: 1rem; }
-#leftbar { left: 0; top: 0; bottom: 0; width: 1rem; }
-#rightbar { right: 0; top: 0; bottom: 0; width: 1rem; }
-#bottombar { right: 0; left: 0; bottom: 0; height: 1rem }
+#topbar { left: 0; top: 0; right: 0; height: 15px; }
+#leftbar { left: 0; top: 0; bottom: 0; width: 15px; }
+#rightbar { right: 0; top: 0; bottom: 0; width: 15px; }
+#bottombar { right: 0; left: 0; bottom: 0; height: 15px }
 
 /* TOP OF THE WEBSITE PAGE */
-header { position: relative; top: 2rem; left: 2rem; right: 2rem; width: 96%; z-index: 3; padding-top: 1rem; padding-bottom: 1rem; height: 100px; }
-.spacer { height: 50px; width: 150px; }
-header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 10px;}
+header { position: relative; top: 16px; left: 16px; width: 98%; z-index: 3; padding: 5px; height: 100px; }
+.logo-area {text-align: center; }
+.logo { color: rgb(230,195,53); font-size: 30px; text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
 ul { list-style: none; margin: 0; padding: 0; }
 li { line-height: 1.5rem; }
 header nav > ul > li > .active { opacity: 1; }
 header nav > ul > li > .non-active { opacity: .5; }
-header nav > ul > li > a { padding: 0.75rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
 header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-.topbar-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; }
-.logo { color: rgb(230,195,53); font-size: 30px; text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+.grid-layout { display: grid; }
+.grid-flow-column { grid-auto-flow: column; grid-template-columns: 150px 150px 150px 150px 150px; height: 60px; align-items: center; align-content: center; justify-content: center;}
+.menu-area { text-align: center; align-items: center;}
 
 /* SPACE BETWEEN HEADER AND MAIN CONTENT */
 .spacer2 { width: 100%; height: 25px;}
@@ -54,10 +55,6 @@ article { display: block; float: left; padding: 20px; width: 65%; background-col
 aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); height: 700px; }
 .footer-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; }
 
-/* REDUNDANT CODE */
-.grid-layout { display: grid; }
-.grid-flow-column { grid-auto-flow: column; }
-
 /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
 .prev-box1 { position: fixed; left: 15%; top: 79%; width: 30px; }
 .prev-box2 { position: fixed; width: 195px; height: 60px; top: 79%; left: 16.85%; }
@@ -81,15 +78,18 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 /* Responsive Design: Small Screens - Mobile Devices - Portrait */
 @media only screen and (min-width: 375px) and (max-width: 430px) {
   /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 1vw; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.95rem; padding-bottom: 0.5rem; height: 75px; }
-  .spacer { height: 1px; }
-  header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
-  li { line-height: 0.70rem; } /* MIGHT NEED CHANGING */
-  header nav > ul > li > a { padding: 5px; font-size: 12px; text-shadow: 1px 1px rgb(0,0,0); }
-  .topbar-container { margin-left: auto; margin-right: auto; padding-left: .5rem; padding-right: .5rem; align-items: center; } /* MIGHT NEED CHANGING */
-  .logo { font-size: 15px; text-shadow: 1px 1px rgb(0,0,0); }
-  header .grid-flow-column {  grid-template-rows: auto auto auto; }
-  header > nav > ul .grid-flow-column { grid-template-columns: auto auto auto auto auto; }
+  header { position: relative; top: 16px; left: 16px; width: 98%; z-index: 3; padding: 5px; height: 100px; }
+  .logo-area {text-align: center; }
+  .logo { color: rgb(230,195,53); font-size: 20px; text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { line-height: 1.5rem; }
+  header nav > ul > li > .active { opacity: 1; }
+  header nav > ul > li > .non-active { opacity: .5; }
+  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
+  .grid-layout { display: grid; }
+  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px 17px; grid-template-columns: 95px 95px 95px; height: 60px; align-items: center; align-content: center; justify-content: center;}
+  .menu-area { text-align: center; align-items: center; font-size: 12px;}
 	  
   /* LEFT NAVIGATION MENU */
   .types { float: left; width: 30%; height: 700px;; background: rgb(0,0,0); padding: 0px; font-size: 3vw;}
@@ -111,15 +111,18 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 /* Responsive Design: Small Screens - Mobile Devices - Landscape */
 @media only screen and (min-width: 431px) and (max-width: 932px) {
   /* TOP OF THE WEBSITE PAGE */
-	header { position: relative; top: 5px; left: 1vw; right: 1vw; width: 98%; z-index: 3; padding-top: 0.95rem; padding-bottom: 0.5rem; height: 87px; }
-	.spacer { height: 1px; }
-	header nav { align-items: center; justify-content: space-between; text-align: center; padding-top: 5px;}
-	li { line-height: 0.70rem; } /* MIGHT NEED CHANGING */
-	header nav > ul > li > a { padding: 5px; font-size: 17px; text-shadow: 1px 1px rgb(0,0,0); }
-	.topbar-container { margin-left: auto; margin-right: auto; padding: 1.0rem; align-items: center; } /* MIGHT NEED CHANGING */
-	.logo { font-size: 20px; text-shadow: 1px 1px rgb(0,0,0); }
-	header .grid-flow-column {  grid-template-rows: auto auto auto; }
-	header > nav > ul .grid-flow-column { grid-template-columns: auto auto auto auto auto; }
+  header { position: relative; top: 16px; left: 16px; width: 98%; z-index: 3; padding: 5px; height: 100px; }
+  .logo-area {text-align: center; }
+  .logo { color: rgb(230,195,53); font-size: 20px; text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { line-height: 1.5rem; }
+  header nav > ul > li > .active { opacity: 1; }
+  header nav > ul > li > .non-active { opacity: .5; }
+  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
+  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
+  .grid-layout { display: grid; }
+  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px 17px; grid-template-columns: 95px 95px 95px; height: 60px; align-items: center; align-content: center; justify-content: center;}
+  .menu-area { text-align: center; align-items: center; font-size: 12px;}
 	  
   /* LEFT NAVIGATION MENU */
 	.types { float: left; width: 30%; height: 700px;; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
