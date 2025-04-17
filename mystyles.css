@@ -1,59 +1,28 @@
 /* mystyles.css */
 
-/* BODY OF THE WEBSITE PAGE */
-body { margin: 0; background: rgb(155,175,221); height: 100vh; padding: 0; z-index: 1; font-family: Georgia, serif; }
-* { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
-:before, :after { box-sizing: inherit; }
-.bars { background: rgb(22,63,101); position: fixed; z-index: 2; }
-#topbar { left: 0; top: 0; right: 0; height: 15px; }
-#leftbar { left: 0; top: 0; bottom: 0; width: 15px; }
-#rightbar { right: 0; top: 0; bottom: 0; width: 15px; }
-#bottombar { right: 0; left: 0; bottom: 0; height: 15px }
+/* BODY CONTENT STYLING */
+	body { margin: 0; font-family: Georgia, serif; background-color: rgb(51,51,51); }
+	* { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
 
-/* TOP OF THE WEBSITE PAGE */
-header { position: relative; top: 16px; left: 16px; width: 98%; z-index: 3; padding: 5px; height: 100px; }
-.logo-area {text-align: center; }
-.logo { color: rgb(230,195,53); font-size: 30px; text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-ul { list-style: none; margin: 0; padding: 0; }
-li { line-height: 1.5rem; }
-header nav > ul > li > .active { opacity: 1; }
-header nav > ul > li > .non-active { opacity: .5; }
-header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-.grid-layout { display: grid; }
-.grid-flow-column { grid-auto-flow: column; grid-template-columns: 130px 130px 130px 130px 130px; height: 60px; align-items: center; align-content: center; justify-content: center;}
-.menu-area { text-align: center; align-items: center; font-size: 15px;}
-
-/* SPACE BETWEEN HEADER AND MAIN CONTENT */
-.spacer2 { width: 100%; height: 25px;}
+/* HEADER CONTENT STYLING */
+	.header-nav { overflow: hidden; background-color: rgb(51,51,51); }
+	.header-nav .logo { float: left; display: block; color: rgb(230,195,53); text-align: center; padding: 18px 16px; text-decoration: none; font-size: 20px; text-shadow: 2px 2px rgb(0,0,0); vertical-align: middle; }
+	.header-nav .nav0, .nav1, .nav2, .nav3, .nav4, .nav5, .icon { float: left; display: block; color: rgb(255,255,255); text-align: center; padding: 24px 14px; text-decoration: none; font-size: 12px; vertical-align: middle; text-transform: uppercase; }
+	.header-nav .nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover, .icon:hover { background-color: rgb(221,221,221); color: black; }
+	.header-nav .icon { display: none; }
+	.header .active { opacity: 1; }
+	.header-nav .non-active { opacity: .5; }
 
 /* MAIN CONTENT STYLING */
-.types { float: left; width: 15%; height: 700px; background: rgb(0,0,0); padding: 0px; }
-
-/* GUIDES STYLES */
-#g-links { text-decoration: none; color: rgb(0,176,240); }
-#g-links:visited { text-decoration: none; color: rgb(0,176,240); }
-#g-links:hover { text-decoration: none; color: rgb(230,195,53); }
-#g-links:focus { text-decoration: none; color: rgb(0,176,240); }
-#g-links:active { text-decoration: none; color: rgb(0,0,0); }
-
-/* QUIZ ME! STYLES */
-#beginButton { cursor: pointer; }
-#beginButton:hover { background-color: rgb(0,0,0); color: rgb(255,255,225); }
-#quizBtn { cursor: pointer; }
-#quizBtn:hover { background-color: rgb(0,0,0); color: rgb(255,255,225); }
-.answer-box { width: 200px; height: 30px; /*border: 1px solid rgb(0,0,0);*/ background-color: rgb(255,255,0); padding: 5px; font-size: 16px; }
-
-/* LEFT NAVIGATION MENU */
-table { padding: 20px; margin: 0; }
-tr, td { padding: 1px; margin: 1px; }
-.buffer { height: 15px; width: 20px; }
-.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-td a:hover { color: rgb(255,255,0); text-shadow: 1px 1px rgb(255,255,255); }
-main section table tr td a.active { color: rgb(255,255,0); text-shadow: 1px 1px rgb(255,255,255);}
-article { display: block; float: left; padding: 20px; width: 65%; background-color: rgb(255,255,255); height: 700px; }
-aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); height: 700px; }
-.footer-container { margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; align-items: center; }
+	.types { float: left; width: 10%; height: 90vh; background-color: rgb(51,51,51); padding: 0px; }
+	table { padding: 15px 3px; margin: 0; }
+	th { color: rgb(230,195,53); text-shadow: 2px 2px rgb(0,0,0); text-align: left; width: 100%; }
+	td { padding: 5px 5px; margin: 1px; text-align: left;}
+	.link { float: left; display: block; color: rgb(255,255,255); text-align: center; padding: 3px 40px 2px 5px; text-decoration: none; font-size: 15px; vertical-align: middle; }
+	tr a:hover { background-color: rgb(255,255,0); color: rgb(0,0,0); }
+	main section table tr td a.active { background-color: rgb(255,255,0); text-shadow: 1px 1px rgb(255,255,255);}
+	article { display: block; float: left; padding: 20px; width: 90%; background-color: rgb(255,255,255); height: 90vh; }
+	footer { background-color: rgb(51,51,51); text-align: right; bottom: 20px; right: 15px; }
 
 /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
 .prev-box1 { position: fixed; left: 15%; top: 79%; width: 30px; }
@@ -75,260 +44,28 @@ aside { float: left; padding: 20px; width: 20%; background-color: rgb(0,0,0); he
 .next-box2:hover .next-overlay { width: 100%; box-shadow: inset -195px 0 0 0 rgb(155,175,221); }
 .next-text:hover { cursor: pointer; color: black; text-shadow: 1px 1px rgb(255,255,255); }
 
-/* Responsive Design: Breakpoint 1 */
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 16px; left: 16px; width: 90vw; z-index: 3; padding: 3px; height: 95px; }
-  .logo-area {text-align: center; }
-  .logo { color: rgb(230,195,53); font-size: 15px; text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
-  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-  .grid-layout { display: grid; }
-  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px 17px; grid-template-columns: 80px 80px 80px; height: 60px; align-items: center; align-content: center; justify-content: center;}
-  .menu-area { text-align: center; align-items: center; font-size: 10px;}
-	  
-  /* LEFT NAVIGATION MENU */
-  .types { float: left; width: 30%; height: 700px; background: rgb(0,0,0); padding: 0px; font-size: 3vw;}
-  table { padding: 20px; margin: 0; }
-  tr, td { padding: 1px; margin: 1px; }
-  .buffer { height: 15px; width: 20px; }
-  .link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-	
-  /* RIGHT CONTENT BOX */	
-  article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
-  aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
-  .footer-container { right: 0; left: 0; bottom: 0; height: 25px; display: grid; grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: 200px; align-items: center; align-content: center; justify-content: center; }
+/* GUIDES STYLES */
+#g-links { text-decoration: none; color: rgb(0,176,240); }
+#g-links:visited { text-decoration: none; color: rgb(0,176,240); }
+#g-links:hover { text-decoration: none; color: rgb(230,195,53); }
+#g-links:focus { text-decoration: none; color: rgb(0,176,240); }
+#g-links:active { text-decoration: none; color: rgb(0,0,0); }
 
-  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
-  .prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
-  .next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
-}
+/* QUIZ ME! STYLES */
+#beginButton { cursor: pointer; }
+#beginButton:hover { background-color: rgb(0,0,0); color: rgb(255,255,225); }
+#quizBtn { cursor: pointer; }
+#quizBtn:hover { background-color: rgb(0,0,0); color: rgb(255,255,225); }
+.answer-box { width: 200px; height: 30px; /*border: 1px solid rgb(0,0,0);*/ background-color: rgb(255,255,0); padding: 5px; font-size: 16px; }
 
-/* Responsive Design: Breakpoint 2 */
-@media only screen and (min-width: 375px) and (max-width: 399px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 16px; left: 16px; width: 91.466vw; z-index: 3; padding: 3px; height: 95px; }
-  .logo-area {text-align: center; }
-  .logo { color: rgb(230,195,53); font-size: calc(15px + (1.875px)); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
-  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-  .grid-layout { display: grid; }
-  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px 17px; grid-template-columns: calc(80px + (7.143px)) calc(80px + (7.143px)) calc(80px + (7.143px)); height: 60px; align-items: center; align-content: center; justify-content: center;}
-  .menu-area { text-align: center; align-items: center; font-size: calc(10px + (0.0715px));}
-	  
-  /* LEFT NAVIGATION MENU */
-	.types { float: left; width: 30%; height: 700px; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
-	table { padding: 20px; margin: 0; }
-	tr, td { padding: 1px; margin: 1px; }
-	.buffer { height: 15px; width: 20px; }
-	.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-	
-  /* RIGHT CONTENT BOX */	
-  article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
-  aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
-  .footer-container { right: 0; left: 0; bottom: 0; height: 25px; display: grid; grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: 200px; align-items: center; align-content: center; justify-content: center; }
+/* RESPONSIVE TECHNOLOGY */
+	@media screen and (max-width: 1023px) {
+		.header-nav a:not(:first-child) {display: none;}
+		.header-nav a.icon { float: right; display: block; }
+	}
 
-  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
-  .prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
-  .next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
-}
-/* Responsive Design: Breakpoint 3 */
-@media only screen and (min-width: 400px) and (max-width: 424px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 16px; left: 16px; width: 92vw; z-index: 3; padding: 3px; height: 95px; }
-  .logo-area {text-align: center; }
-  .logo { color: rgb(230,195,53); font-size: calc(15px + (1.875px*2)); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
-  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-  .grid-layout { display: grid; }
-  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px 17px; grid-template-columns: calc(80px + (7.143px*2)) calc(80px + (7.143px*2)) calc(80px + (7.143px*2)); height: 60px; align-items: center; align-content: center; justify-content: center;}
-  .menu-area { text-align: center; align-items: center; font-size: calc(10px + (0.0715px*2));}
-	  
-  /* LEFT NAVIGATION MENU */
-	.types { float: left; width: 30%; height: 700px; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
-	table { padding: 20px; margin: 0; }
-	tr, td { padding: 1px; margin: 1px; }
-	.buffer { height: 15px; width: 20px; }
-	.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-	
-  /* RIGHT CONTENT BOX */	
-  article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
-  aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
-  .footer-container { right: 0; left: 0; bottom: 0; height: 25px; display: grid; grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: 200px; align-items: center; align-content: center; justify-content: center; }
-
-  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
-  .prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
-  .next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
-}
-/* Responsive Design: Breakpoint 4 */
-@media only screen and (min-width: 425px) and (max-width: 479px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 16px; left: 16px; width: 92.47vw; z-index: 3; padding: 3px; height: 95px; }
-  .logo-area {text-align: center; }
-  .logo { color: rgb(230,195,53); font-size: calc(15px + (1.875px*3)); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
-  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-  .grid-layout { display: grid; }
-  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px 17px; grid-template-columns: calc(80px + (7.143px*3)) calc(80px + (7.143px*3)) calc(80px + (7.143px*3)); height: 60px; align-items: center; align-content: center; justify-content: center;}
-  .menu-area { text-align: center; align-items: center; font-size: calc(10px + (0.0715px*3));}
-	  
-  /* LEFT NAVIGATION MENU */
-	.types { float: left; width: 30%; height: 700px; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
-	table { padding: 20px; margin: 0; }
-	tr, td { padding: 1px; margin: 1px; }
-	.buffer { height: 15px; width: 20px; }
-	.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-	
-  /* RIGHT CONTENT BOX */	
-  article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
-  aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
-  .footer-container { right: 0; left: 0; bottom: 0; height: 25px; display: grid; grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: 200px; align-items: center; align-content: center; justify-content: center; }
-
-  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
-  .prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
-  .next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
-}
-/* Responsive Design: Breakpoint 5 */
-@media only screen and (min-width: 480px) and (max-width: 699px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 16px; left: 16px; width: 93.334vw; z-index: 3; padding: 3px; height: 95px; }
-  .logo-area {text-align: center; }
-  .logo { color: rgb(230,195,53); font-size: calc(15px + (1.875px*4)); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
-  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-  .grid-layout { display: grid; }
-  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: calc(80px + (7.143px*2)) calc(80px + (7.143px*2)) calc(80px + (7.143px*2)) calc(80px + (7.143px*2)) calc(80px + (7.143px*2)); height: 60px; align-items: center; align-content: center; justify-content: center;}
-  .menu-area { text-align: center; align-items: center; font-size: calc(10px + (0.0715px*4));}
-	  
-  /* LEFT NAVIGATION MENU */
-	.types { float: left; width: 30%; height: 700px; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
-	table { padding: 20px; margin: 0; }
-	tr, td { padding: 1px; margin: 1px; }
-	.buffer { height: 15px; width: 20px; }
-	.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-	
-  /* RIGHT CONTENT BOX */	
-  article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
-  aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
-  .footer-container { right: 0; left: 0; bottom: 0; height: 25px; display: grid; grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: 200px; align-items: center; align-content: center; justify-content: center; }
-
-  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
-  .prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
-  .next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
-}
-/* Responsive Design: Breakpoint 6 */
-@media only screen and (min-width: 700px) and (max-width: 767px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 16px; left: 16px; width: 95.428vw; z-index: 3; padding: 3px; height: 95px; }
-  .logo-area {text-align: center; }
-  .logo { color: rgb(230,195,53); font-size: calc(15px + (1.875px*5)); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
-  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-  .grid-layout { display: grid; }
-  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: calc(80px + (7.143px*3)) calc(80px + (7.143px*3)) calc(80px + (7.143px*3)) calc(80px + (7.143px*3)) calc(80px + (7.143px*3)); height: 60px; align-items: center; align-content: center; justify-content: center;}
-  .menu-area { text-align: center; align-items: center; font-size: calc(10px + (0.0715px*5));}
-	  
-  /* LEFT NAVIGATION MENU */
-	.types { float: left; width: 30%; height: 700px; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
-	table { padding: 20px; margin: 0; }
-	tr, td { padding: 1px; margin: 1px; }
-	.buffer { height: 15px; width: 20px; }
-	.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-	
-  /* RIGHT CONTENT BOX */	
-  article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
-  aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
-  .footer-container { right: 0; left: 0; bottom: 0; height: 25px; display: grid; grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: 200px; align-items: center; align-content: center; justify-content: center; }
-
-  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
-  .prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
-  .next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
-}
-/* Responsive Design: Breakpoint 7 */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 16px; left: 16px; width: 95.834vw; z-index: 3; padding: 3px; height: 95px; }
-  .logo-area {text-align: center; }
-  .logo { color: rgb(230,195,53); font-size: calc(15px + (1.875px*6)); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
-  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-  .grid-layout { display: grid; }
-  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: calc(80px + (7.143px*6)) calc(80px + (7.143px*5)) calc(80px + (7.143px*5)) calc(80px + (7.143px*5)) calc(80px + (7.143px*5)); height: 60px; align-items: center; align-content: center; justify-content: center;}
-  .menu-area { text-align: center; align-items: center; font-size: calc(10px + (0.0715px*6));}
-	  
-  /* LEFT NAVIGATION MENU */
-	.types { float: left; width: 30%; height: 700px; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
-	table { padding: 20px; margin: 0; }
-	tr, td { padding: 1px; margin: 1px; }
-	.buffer { height: 15px; width: 20px; }
-	.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-	
-  /* RIGHT CONTENT BOX */	
-  article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
-  aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
-  .footer-container { right: 0; left: 0; bottom: 0; height: 25px; display: grid; grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: 200px; align-items: center; align-content: center; justify-content: center; }
-
-  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
-  .prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
-  .next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
-}
-/* Responsive Design: Breakpoint 8 */
-@media only screen and (min-width: 960px) and (max-width: 1023px) {
-  /* TOP OF THE WEBSITE PAGE */
-  header { position: relative; top: 16px; left: 16px; width: 96.666vw; z-index: 3; padding: 3px; height: 95px; }
-  .logo-area {text-align: center; }
-  .logo { color: rgb(230,195,53); font-size: calc(15px + (1.875px*7)); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { line-height: 1.5rem; }
-  header nav > ul > li > .active { opacity: 1; }
-  header nav > ul > li > .non-active { opacity: .5; }
-  header nav > ul > li > a { padding: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgb(255,255,255); text-shadow: 2px 2px rgb(0,0,0); text-decoration: none; }
-  header nav > ul > li > a:hover { color: rgb(230,195,53); opacity: 1; /*background-color: rgb(155,175,221);*/ }
-  .grid-layout { display: grid; }
-  .grid-flow-column { grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: calc(80px + (7.143px*7)) calc(80px + (7.143px*7)) calc(80px + (7.143px*7)) calc(80px + (7.143px*7)) calc(80px + (7.143px*7)); height: 60px; align-items: center; align-content: center; justify-content: center;}
-  .menu-area { text-align: center; align-items: center; font-size: calc(10px + (0.0715px*7));}
-	  
-  /* LEFT NAVIGATION MENU */
-	.types { float: left; width: 30%; height: 700px; background: rgb(0,0,0); padding: 0px; font-size: 12px;}
-	table { padding: 20px; margin: 0; }
-	tr, td { padding: 1px; margin: 1px; }
-	.buffer { height: 15px; width: 20px; }
-	.link { color: rgb(255,255,255); text-decoration: none; text-align: center; }
-	
-  /* RIGHT CONTENT BOX */	
-  article { display: block; float: left; padding: 20px; width: 70%; background-color: rgb(255,255,255); height: 700px; }
-  aside { float: left; padding: 0; width: 0; background-color: rgb(0,0,0); height: 0; }
-  .footer-container { right: 0; left: 0; bottom: 0; height: 25px; display: grid; grid-auto-flow: column; grid-template-rows: 17px; grid-template-columns: 200px; align-items: center; align-content: center; justify-content: center; }
-
-  /* CODE FOR NEXT PREVIOUS SEO TYPE NAVIGATION BOX */
-  .prev-box1, .prev-box2, .prev-img-box, .prev-arrow, .prev-overlay, .prev-text, .prev-box1:hover ~ .prev-box2 .prev-overlay, .prev-box2:hover .prev-overlay, .prev-text:hover { display: none; }
-  .next-box1, .next-box2, .next-img-box, .next-arrow, .next-overlay, .next-text, .next-box1:hover ~ .next-box2 .next-overlay, .next-box2:hover .next-overlay, .next-text:hover { display: none; }
-}
+	@media screen and (max-width: 1023px) {
+		.header-nav.responsive {position: relative;}
+		.header-nav.responsive a { float: none; display: block; text-align: left; padding: 10px;}
+		.header-nav.responsive .icon { position: absolute; right: 0; top: 0; }
+	}
