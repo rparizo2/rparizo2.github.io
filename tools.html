@@ -3,90 +3,60 @@
 <head>
     <title>SEO Technology</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mystyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<!-- Add background bars and logo w/navigation -->
-	<div id="topbar" class="bars"></div>
-	<div id="leftbar" class="bars"></div>
-	<div id="rightbar" class="bars"></div>
-	<div id="bottombar" class="bars"></div>
 	<header>
-		<!--<div class="topbar-container">-->
-			<div class="logo-area">
-				<a href="index.html" class="logo" title="SEO Technology Home Page">Search Engine Optimization (SEO) Technology</a>
-			</div>
-			<div class="menu-area">
-				<nav aria-label="header-menu">
-					<ul class="grid-layout grid-flow-column">
-						<li><a href="index.html" class="non-active">Overview</a></li>
-						<li><a href="guides.html" class="non-active">Guides</a></li>
-						<li><a href="tools.html" class="active">Tools</a></li>
-						<li><a href="ref.html" class="non-active">References</a></li>
-						<li><a href="quiz.html" class="non-active">Quiz Me!</a></li>
-					</ul>
-				</nav>
-			</div>
-		<!--</div>-->
+		<div class="header-nav" id="topnav">				
+			<a href="index.html" class="logo" title="SEO Technology Home Page">Search Engine Optimization (SEO) Technology</a>
+			<a href="#spacer" class="nav0"></a>
+			<a href="index.html" class="nav1 non-active">Overview</a>
+			<a href="guides.html" class="nav2 non-active">Guides</a>
+			<a href="tools.html" class="nav3 active">Tools</a>
+			<a href="ref.html" class="nav4 non-active">References</a>
+			<a href="quiz.html" class="nav5 non-active">Quiz Me!</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>							
+		</div>
 	</header>
 	<main>
-		<div class="spacer2"></div>
 		<section>
 			<div class="types">
-				<table style="width: 100%;">
+				<table>
 					<tr>
-						<th colspan="3" style="color: rgb(230,195,53); text-align: center;">Types of SEO</th>
+						<th>SEO Types</th>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_technical.html" class="link">Technical</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_technical.html" class="link">Technical</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_on_page.html" class="link">On-Page</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_on_page.html" class="link">On-Page</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_off_page.html" class="link">Off-Page</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_off_page.html" class="link">Off-Page</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_content.html" class="link">Content</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_content.html" class="link">Content</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_local.html" class="link">Local</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_local.html" class="link">Local</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_mobile.html" class="link">Mobile</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_mobile.html" class="link">Mobile</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_ecommerce.html" class="link">eCommerce</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_ecommerce.html" class="link">eCommerce</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_video.html" class="link">Video</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_video.html" class="link">Video</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_image.html" class="link">Image</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_image.html" class="link">Image</a></td>
 					</tr>
 					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_international.html" class="link">International</a></td>
-						<td class="buffer"></td>
+						<td><a href="seo_international.html" class="link">International</a></td>
 					</tr>			
 				</table>
 			</div>
@@ -108,5 +78,15 @@
 	<footer class="footer-container">
 		<h5 style="color: rgb(230,195,53); text-shadow: 1px 1px rgb(0,0,0);">Presented by: Robert Parizo</h5>
 	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("topnav");
+			if (x.className === "header-nav") {
+				x.className += " responsive";
+			} else {
+				x.className = "header-nav";
+			}
+		}
+	</script>
 </body>
 </html>
