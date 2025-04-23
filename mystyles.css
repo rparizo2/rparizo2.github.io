@@ -459,17 +459,34 @@ body {
 }
 
 /* RESPONSIVE TECHNOLOGY - Breakpoint 2	*/
-@media screen and (min-width: 1151px) and (max-width: 1225px) {
-.logo { 
-	padding: 19px; 
-	font-size: 18px; 
+@media screen and (min-width: 1151px) and (max-width: 1240px) {
+.logo {
+	padding: 21px;
+	font-size: 18px;
 }
-	
+
+
 }
 
 /* RESPONSIVE TECHNOLOGY - Breakpoint 3	*/
-@media screen and (min-width: 320px) {
-.logo { 
-	padding: 19px; 
-	font-size: 14px; 
+@media screen and (min-width: 350px) and (max-width: 430px) {
+.logo {
+	padding: 23px;
+	font-size: 14px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    width: 92.5px;
+    direction: rtl; 
+    margin-left: 15px;
+    white-space: nowrap;
+}
+    
+.ellipsis:after {
+    position: absolute;
+    left: 0px;
+    content: "...";
+}
+
 }
