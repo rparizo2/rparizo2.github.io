@@ -6,61 +6,66 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mystyles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- The following scripts are from the KSU website - props to the designer of the menu sliders. I used them for my website for responsive purposes.-->
+	<script defer="" type="text/javascript" src="dom-slider.js"></script>
+	<script defer="" type="text/javascript" src="types_menu.js"></script>
 </head>
 <body>
-	<!-- Add background bars and logo w/navigation -->
-	<header>
-		<div class="header-nav" id="topnav">				
-			<a href="index.html" class="logo" title="SEO Technology Home Page">Search Engine Optimization (SEO) Technology</a>
-			<a href="#spacer" class="nav0"></a>
-			<a href="index.html" class="nav1 non-active">Overview</a>
-			<a href="guides.html" class="nav2 non-active">Guides</a>
-			<a href="tools.html" class="nav3 non-active">Tools</a>
-			<a href="ref.html" class="nav4 non-active">References</a>
-			<a href="quiz.html" class="nav5 active">Quiz Me!</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>							
-		</div>
-	</header>
-	<main>
-		<section>
-			<div class="types">
-				<table>
-					<tr>
-						<th>SEO Types</th>
-					</tr>
-					<tr>
-						<td><a href="seo_technical.html" class="link">Technical</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_on_page.html" class="link">On-Page</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_off_page.html" class="link">Off-Page</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_content.html" class="link">Content</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_local.html" class="link">Local</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_mobile.html" class="link">Mobile</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_ecommerce.html" class="link">eCommerce</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_video.html" class="link">Video</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_image.html" class="link">Image</a></td>
-					</tr>
-					<tr>
-						<td><a href="seo_international.html" class="link">International</a></td>
-					</tr>			
-				</table>
+	<!-- Add container for all content -->
+	<div class="container">
+		<div class="blank"></div>
+		<!-- Logo and main menu -->
+		<div class="header-nav">
+			<div id="seo_logo">
+				<a href="index.html" class="logo" title="SEO Technology Home Page">Search Engine Optimization (SEO) Technology</a>
 			</div>
-			<article style="overflow-y:auto;">
+
+			<div id="page_types" role="navigation" aria-label="Menu List">
+				<ul>
+					<li class="menu_list" tabindex="0" role="button" aria-label="Toggle Page Types Navigation" aria-expanded="false" area-controls="nav_menu">
+						<p>
+							<i class="fa fa-bars menu-chng"> Menu</i>
+						</p>
+						<ul id="nav_menu">							
+							<li><a href="index.html" class="non-active">Overview</a></li>
+							<li><a href="guides.html" class="non-active">Guides</a></li>
+							<li><a href="tools.html" class="non-active">Tools</a></li>
+							<li><a href="ref.html" class="non-active">References</a></li>
+							<li><a href="quiz.html" class="active">Quiz Me!</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="blank"></div>
+			
+		<div class="blank"></div>		
+
+		<div class="main-nav">
+			<div id="seo_types" role="navigation" aria-label="Types List">
+				<ul>
+					<li class="types_list" tabindex="0" role="button" aria-label="Toggle SEO Types Navigation" aria-expanded="false" area-controls="typeslist_menu">
+						<p>SEO Types
+							<i class="fa fa-bars types_icon"></i>
+						</p>
+						<ul id="typeslist_menu">
+							<li><a href="seo_technical.html">Technical</a></li>
+							<li><a href="seo_on_page.html">On-Page</a></li>
+							<li><a href="seo_off_page.html">Off-Page</a></li>
+							<li><a href="seo_content.html">Content</a></li>
+							<li><a href="seo_local.html">Local</a></li>
+							<li><a href="seo_mobile.html">Mobile</a></li>
+							<li><a href="seo_ecommerce.html">eCommerce</a></li>
+							<li><a href="seo_video.html">Video</a></li>
+							<li><a href="seo_image.html">Image</a></li>
+							<li><a href="seo_international.html">International</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- Information about SEO -->
+			<div class="main-content">
 				<style>
 					.hidden { display: none; }
 				</style>
@@ -155,22 +160,10 @@
 				</div>
 				</form>
 				<script src="quiz.js"></script>
-			</article>
-			<aside></aside>
-		</section>
-	</main>
-	<footer class="footer-container">
-		<h5 style="color: rgb(230,195,53); text-shadow: 1px 1px rgb(0,0,0);">Presented by: Robert Parizo</h5>
-	</footer>
-	<script>
-		function myFunction() {
-			var x = document.getElementById("topnav");
-			if (x.className === "header-nav") {
-				x.className += " responsive";
-			} else {
-				x.className = "header-nav";
-			}
-		}
-	</script>
+			</div>
+		</div>
+		
+		<div class="blank"></div>
+	</div>
 </body>
 </html>

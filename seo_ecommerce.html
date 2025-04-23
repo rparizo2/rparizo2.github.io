@@ -3,95 +3,70 @@
 <head>
     <title>SEO Technology</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mystyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- The following scripts are from the KSU website - props to the designer of the menu sliders. I used them for my website for responsive purposes.-->
+	<script defer="" type="text/javascript" src="dom-slider.js"></script>
+	<script defer="" type="text/javascript" src="types_menu.js"></script>
 </head>
 <body>
-	<!-- Add background bars and logo w/navigation -->
-	<div id="topbar" class="bars"></div>
-	<div id="leftbar" class="bars"></div>
-	<div id="rightbar" class="bars"></div>
-	<div id="bottombar" class="bars"></div>
-	<header>
-		<!--<div class="topbar-container">-->
-			<div class="logo-area">
+	<!-- Add container for all content -->
+	<div class="container">
+		<div class="blank"></div>
+		<!-- Logo and main menu -->
+		<div class="header-nav">
+			<div id="seo_logo">
 				<a href="index.html" class="logo" title="SEO Technology Home Page">Search Engine Optimization (SEO) Technology</a>
 			</div>
-			<div class="menu-area">
-				<nav aria-label="header-menu">
-					<ul class="grid-layout grid-flow-column">
-						<li><a href="index.html" class="non-active">Overview</a></li>
-						<li><a href="guides.html" class="non-active">Guides</a></li>
-						<li><a href="tools.html" class="non-active">Tools</a></li>
-						<li><a href="ref.html" class="non-active">References</a></li>
-						<li><a href="quiz.html" class="non-active">Quiz Me!</a></li>
-					</ul>
-				</nav>
+
+			<div id="page_types" role="navigation" aria-label="Menu List">
+				<ul>
+					<li class="menu_list" tabindex="0" role="button" aria-label="Toggle Page Types Navigation" aria-expanded="false" area-controls="nav_menu">
+						<p>
+							<i class="fa fa-bars menu-chng"> Menu</i>
+						</p>
+						<ul id="nav_menu">							
+							<li><a href="index.html" class="active">Overview</a></li>
+							<li><a href="guides.html" class="non-active">Guides</a></li>
+							<li><a href="tools.html" class="non-active">Tools</a></li>
+							<li><a href="ref.html" class="non-active">References</a></li>
+							<li><a href="quiz.html" class="non-active">Quiz Me!</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-		<!--</div>-->
-	</header>
-	<main>
-		<div class="spacer2"></div>
-		<section>
-			<div class="types">
-				<table style="width: 100%;">
-					<tr>
-						<th colspan="3" style="color: rgb(230,195,53); text-align: center;">Types of SEO</th>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_technical.html" class="link">Technical</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_on_page.html" class="link">On-Page</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_off_page.html" class="link">Off-Page</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_content.html" class="link">Content</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_local.html" class="link">Local</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_mobile.html" class="link">Mobile</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_ecommerce.html" class="link active">eCommerce</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_video.html" class="link">Video</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_image.html" class="link">Image</a></td>
-						<td class="buffer"></td>
-					</tr>
-					<tr>
-						<td class="buffer"></td>
-						<td style="text-align: center;"><a href="seo_international.html" class="link">International</a></td>
-						<td class="buffer"></td>
-					</tr>			
-				</table>
+		</div>
+		
+		<div class="blank"></div>
+			
+		<div class="blank"></div>		
+
+		<div class="main-nav">
+			<div id="seo_types" role="navigation" aria-label="Types List">
+				<ul>
+					<li class="types_list" tabindex="0" role="button" aria-label="Toggle SEO Types Navigation" aria-expanded="false" area-controls="typeslist_menu">
+						<p>SEO Types
+							<i class="fa fa-bars types_icon"></i>
+						</p>
+						<ul id="typeslist_menu">
+							<li><a href="seo_technical.html">Technical</a></li>
+							<li><a href="seo_on_page.html">On-Page</a></li>
+							<li><a href="seo_off_page.html">Off-Page</a></li>
+							<li><a href="seo_content.html">Content</a></li>
+							<li><a href="seo_local.html">Local</a></li>
+							<li><a href="seo_mobile.html">Mobile</a></li>
+							<li><a href="seo_ecommerce.html">eCommerce</a></li>
+							<li><a href="seo_video.html">Video</a></li>
+							<li><a href="seo_image.html">Image</a></li>
+							<li><a href="seo_international.html">International</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-			<article style="overflow-y:auto;">
-				<h1>SEO Type: eCommerce</h1>
+			<!-- Information about SEO -->
+			<div class="main-content">
+				<h2>SEO Type: eCommerce</h2>
 				<p>eCommerce SEO focuses on optimizing online stores to improve their visibility and ranking in search engine results, driving more organic traffic and sales.</p>
 
 				<p>Here are some key elements:</p>
@@ -106,35 +81,10 @@
 				<p><b>Content Marketing</b>: Create valuable content, such as blog posts, guides, and videos, that addresses customer needs and interests. This can attract backlinks and drive traffic to your site.</p>
 
 				<p>By focusing on these eCommerce SEO strategies, you can enhance your online store's visibility, attract more potential customers, and increase sales.</p>
-				
-				<!-- ADD BACK/NEXT NAVIGATION BUTTONS FOR SEO TYPES -->
- 				<div class="prev-box1">
-					<div class="prev-img-box">
-						<img src="Prev.png" class="prev-arrow">
-					</div>
-				</div>
-				<div class="prev-box2">
-					<div class="prev-overlay">
-						<div class="prev-text" onclick="location.href='seo_mobile.html'">Mobile</div>
-					</div>
-				</div>
- 				<div class="next-box1">
-					<div class="next-img-box">
-						<img src="Next.png" class="next-arrow">
-					</div>
-				</div>
-				<div class="next-box2">
-					<div class="next-overlay">
-						<div class="next-text" onclick="location.href='seo_video.html'">Video</div>
-					</div>
-				</div>			
-				
-			</article>
-			<aside></aside>
-		</section>
-	</main>
-	<footer class="footer-container">
-		<h5 style="color: rgb(230,195,53); text-shadow: 1px 1px rgb(0,0,0);">Presented by: Robert Parizo</h5>
-	</footer>
+			</div>
+		</div>
+		
+		<div class="blank"></div>
+	</div>
 </body>
 </html>
